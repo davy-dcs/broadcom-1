@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.davyd.cashcard.CashCardJsonTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-05-09T15:18:48.384Z" hostname="Mac.lan" time="0.385">
+  <properties/>
+  <testcase name="cashCardSerializationTest()" classname="fr.davyd.cashcard.CashCardJsonTest" time="0.369"/>
+  <testcase name="cashCardDeserializationTest()" classname="fr.davyd.cashcard.CashCardJsonTest" time="0.015"/>
+  <system-out><![CDATA[17:18:48.092 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [fr.davyd.cashcard.CashCardJsonTest]: CashCardJsonTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:18:48.143 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration fr.davyd.cashcard.CashcardApplication for test class fr.davyd.cashcard.CashCardJsonTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-05-09T17:18:48.271+02:00  INFO 18214 --- [cashcard] [    Test worker] fr.davyd.cashcard.CashCardJsonTest       : Starting CashCardJsonTest using Java 17.0.15 with PID 18214 (started by davyd in /Users/davyd/IdeaProjects/broadcom-1)
+2025-05-09T17:18:48.272+02:00  INFO 18214 --- [cashcard] [    Test worker] fr.davyd.cashcard.CashCardJsonTest       : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T17:18:48.380+02:00  INFO 18214 --- [cashcard] [    Test worker] fr.davyd.cashcard.CashCardJsonTest       : Started CashCardJsonTest in 0.209 seconds (process running for 0.574)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
