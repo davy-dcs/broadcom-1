@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.davyd.cashcard.CashcardApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-20T11:40:11.597Z" hostname="Mac.lan" time="2.744">
+  <properties/>
+  <testcase name="shouldCreateANewCashCard()" classname="fr.davyd.cashcard.CashcardApplicationTests" time="2.744"/>
+  <system-out><![CDATA[13:40:10.467 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [fr.davyd.cashcard.CashcardApplicationTests]: CashcardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:40:10.514 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration fr.davyd.cashcard.CashcardApplication for test class fr.davyd.cashcard.CashcardApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-05-20T13:40:10.649+02:00  INFO 8662 --- [cashcard] [    Test worker] f.d.cashcard.CashcardApplicationTests    : Starting CashcardApplicationTests using Java 17.0.15 with PID 8662 (started by davyd in /Users/davyd/IdeaProjects/broadcom-1)
+2025-05-20T13:40:10.649+02:00  INFO 8662 --- [cashcard] [    Test worker] f.d.cashcard.CashcardApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-05-20T13:40:10.845+02:00  INFO 8662 --- [cashcard] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-05-20T13:40:10.860+02:00  INFO 8662 --- [cashcard] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JDBC repository interface.
+2025-05-20T13:40:11.028+02:00  INFO 8662 --- [cashcard] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-05-20T13:40:11.033+02:00  INFO 8662 --- [cashcard] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-20T13:40:11.033+02:00  INFO 8662 --- [cashcard] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-20T13:40:11.052+02:00  INFO 8662 --- [cashcard] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-20T13:40:11.052+02:00  INFO 8662 --- [cashcard] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 396 ms
+2025-05-20T13:40:11.085+02:00  INFO 8662 --- [cashcard] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:146c343f-f03c-47ab-8572-c99a3f7fa17c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2025-05-20T13:40:11.388+02:00  INFO 8662 --- [cashcard] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name testOnlyUsers
+2025-05-20T13:40:11.592+02:00  INFO 8662 --- [cashcard] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50136 (http) with context path '/'
+2025-05-20T13:40:11.596+02:00  INFO 8662 --- [cashcard] [    Test worker] f.d.cashcard.CashcardApplicationTests    : Started CashcardApplicationTests in 1.036 seconds (process running for 1.416)
+2025-05-20T13:40:11.972+02:00  INFO 8662 --- [cashcard] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20T13:40:11.972+02:00  INFO 8662 --- [cashcard] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-20T13:40:11.973+02:00  INFO 8662 --- [cashcard] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-20T13:40:12.287+02:00  INFO 8662 --- [cashcard] [    Test worker] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-20T13:40:14.300+02:00  INFO 8662 --- [cashcard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-20T13:40:14.301+02:00 ERROR 8662 --- [cashcard] [auto-1-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:519) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:72) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-05-20T13:40:14.326+02:00  INFO 8662 --- [cashcard] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:146c343f-f03c-47ab-8572-c99a3f7fa17c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
