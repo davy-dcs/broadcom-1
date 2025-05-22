@@ -38,11 +38,16 @@ public class SecurityConfig {
                 .password(passwordEncoder().encode("password"))
                 .roles("CARD-OWNER")
                 .build();
+        UserDetails math = users
+                .username("math")
+                .password(passwordEncoder().encode("password"))
+                .roles("CARD-OWNER")
+                .build();
         UserDetails hankOwnsNoCards = users
                 .username("hank-owns-no-cards")
                 .password(passwordEncoder().encode("password"))
                 .roles("NON-OWNER")
                 .build();
-        return new InMemoryUserDetailsManager(davy, hankOwnsNoCards);
+        return new InMemoryUserDetailsManager(davy, math, hankOwnsNoCards);
     }
 }
